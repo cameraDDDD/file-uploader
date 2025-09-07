@@ -16,4 +16,5 @@ public class ClassConstant {
             "吴贤珂","郭健民"
     };
     // 一共有 57 个名字
+    public static final String HOSTNAME="47.122.152.241";
 }

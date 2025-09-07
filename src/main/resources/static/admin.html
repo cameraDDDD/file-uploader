@@ -32,7 +32,7 @@
         // 先获取 ul 元素
         const listElement = document.getElementById("file-list");
         // 调用 API 并展示数据
-        fetch("http://localhost:8080/api/committed")
+        fetch("http://47.122.152.241:8080/api/committed")
             .then(response => {
                 if (!response.ok) {
                     throw new Error("网络错误: " + response.status);
@@ -63,7 +63,7 @@
         // 先获取 ul 元素
         const listOfBitches = document.getElementById("bitches");
         // 调用 API 并展示数据
-        fetch("http://localhost:8080/api/uncommitted")
+        fetch("http://47.122.152.241:8080/api/uncommitted")
             .then(response => {
                 if (!response.ok) {
                     throw new Error("网络错误: " + response.status);

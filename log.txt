@@ -1,0 +1,24 @@
+nohup: ignoring input
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.5)
+
+2025-09-07T19:39:02.439+08:00  INFO 419301 --- [File Uploader] [           main] c.example.demo.FileUploaderApplication   : Starting FileUploaderApplication v0.0.1-SNAPSHOT using Java 21 with PID 419301 (/home/camera/File Uploader/target/demo-0.0.1-SNAPSHOT.jar started by camera in /home/camera/File Uploader)
+2025-09-07T19:39:02.452+08:00  INFO 419301 --- [File Uploader] [           main] c.example.demo.FileUploaderApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-09-07T19:39:03.727+08:00  INFO 419301 --- [File Uploader] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-07T19:39:03.747+08:00  INFO 419301 --- [File Uploader] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-07T19:39:03.748+08:00  INFO 419301 --- [File Uploader] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-07T19:39:03.774+08:00  INFO 419301 --- [File Uploader] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-07T19:39:03.775+08:00  INFO 419301 --- [File Uploader] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1258 ms
+2025-09-07T19:39:03.900+08:00  INFO 419301 --- [File Uploader] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-09-07T19:39:04.290+08:00  INFO 419301 --- [File Uploader] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-07T19:39:04.309+08:00  INFO 419301 --- [File Uploader] [           main] c.example.demo.FileUploaderApplication   : Started FileUploaderApplication in 2.381 seconds (process running for 2.899)
+2025-09-07T19:39:05.603+08:00  INFO 419301 --- [File Uploader] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-07T19:39:05.603+08:00  INFO 419301 --- [File Uploader] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-07T19:39:05.605+08:00  INFO 419301 --- [File Uploader] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
