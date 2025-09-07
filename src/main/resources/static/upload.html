@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传</title>
+    <link rel="stylesheet" href="upload-css.css">
+</head>
+
+<body>
+    <h2>上传文件</h2>
+    <p>如果之前上传过文件,之后上传的文件将会覆盖之前的文件</p>
+    <form method="post" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <label for="studentSearch">姓名:</label>
+        <input list="students" id="studentSearch" name="name" />
+
+        <datalist id="students">
+            <option value="0243984郭健民"></option>
+            <option value="0242516黄志成"></option>
+            <option value="0242241刘崇彬"></option>
+            <option value="0243991吴贤珂"></option>
+            <option value="0246228廖彩冷"></option>
+            <option value="0240791占一明"></option>
+            <option value="0240954张童"></option>
+            <option value="0241047查昕伶"></option>
+            <option value="0242241刘崇彬"></option>
+            <option value="0243968石依婧"></option>
+            <option value="0243969张赫轩"></option>
+            <option value="0243970魏岚"></option>
+            <option value="0243971郭欣宇"></option>
+            <option value="0243972张文可"></option>
+            <option value="0243973曹佳胤"></option>
+            <option value="0243974程旋"></option>
+            <option value="0243975李承志"></option>
+            <option value="0243976李瀚林"></option>
+            <option value="0243977钟睿"></option>
+            <option value="0243978詹宇飞"></option>
+            <option value="0243980刘雅慧"></option>
+            <option value="0243981胡佳毅"></option>
+            <option value="0243982廖志博"></option>
+            <option value="0243983王婧轩"></option>
+            <option value="0243985张兆元"></option>
+            <option value="0243986刘裕鹏"></option>
+            <option value="0243987胡凯闻"></option>
+            <option value="0243988侯欣怡"></option>
+            <option value="0243989徐斌"></option>
+            <option value="0243990陈利生"></option>
+            <option value="0243992王世维"></option>
+            <option value="0243993肖俊好"></option>
+            <option value="0243994曾宇桐"></option>
+            <option value="0243995邓山水"></option>
+            <option value="0243996周子赫"></option>
+            <option value="0243997陶金杰"></option>
+            <option value="0243998喻凯"></option>
+            <option value="0243999卢彪"></option>
+            <option value="0244000陈伟霖"></option>
+            <option value="0244001徐梓豪"></option>
+            <option value="0244002曾靓颖"></option>
+            <option value="0244003帅宇涵"></option>
+            <option value="0244004黄伟"></option>
+            <option value="0244005付启剑"></option>
+            <option value="0244007叶江航"></option>
+            <option value="0244008朱佳颖"></option>
+            <option value="0244009刘曼蕾"></option>
+            <option value="0244010刘孜琦"></option>
+            <option value="0244011王积泰"></option>
+            <option value="0244012李佳璐"></option>
+            <option value="0244013李思思"></option>
+            <option value="0244014江欣念"></option>
+            <option value="0244016钟柏"></option>
+            <option value="0244017林豪"></option>
+            <option value="0244018冯爽"></option>
+            <option value="0244019陈雨荷"></option>
+            <option value="0244020拜丹阳"></option>
+            <option value="0244021刘英姿"></option>
+            <option value="0246533刘凡浩"></option>
+
+        </datalist>
+        <button type="submit">上传</button>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+/* 全局背景与字体 */
+body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* 主标题 */
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* 分割线 */
+p {
+    color: #aaa;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+/* 副标题 */
+h2 {
+    margin-bottom: 1.5rem;
+    color: #444;
+    font-weight: normal;
+}
+
+/* 功能块 */
+.block {
+    width: 240px;
+    height: 120px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* 悬停时的效果 */
+.block:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(74, 144, 226, 0.4);
+    background: linear-gradient(90deg, #4A90E2, #56CCF2);
+    color: #fff;
+}
+
+/* 点击时的缩放效果 */
+.block:active {
+    transform: scale(0.96);
+}
+
+/* 动画淡入 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    animation: fadeIn 0.8s ease;
+}

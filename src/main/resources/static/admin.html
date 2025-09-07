@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理界面</title>
+    
+</head>
+
+<body>
+    <h1>后台</h1>
+    <form action="/getAPK" method="get">
+        <button type="submit">
+            获取文件压缩包
+        </button>
+    </form>
+
+
+    <h2>已交</h2>
+    <ul id="file-list">
+        <li>加载中...</li>
+        <!--js脚本将自动显示已提交的文件-->
+    </ul>
+    <h2>未交</h2>
+    <ul id="bitches">
+        <li>加载中...</li>
+        <!--js脚本将自动显示未提交的同学-->
+    </ul>
+
+    <script>
+        // 先获取 ul 元素
+        const listElement = document.getElementById("file-list");
+        // 调用 API 并展示数据
+        fetch("http://localhost:8080/api/committed")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("网络错误: " + response.status);
+                }
+                return response.json();
+            })
+            .then(data => {
+                // 清空“加载中...”
+                listElement.innerHTML = '';
+
+                if (data.length === 0) {
+                    const li = document.createElement("li");
+                    li.textContent = "暂无同学提交";
+                    listElement.appendChild(li);
+                } else {
+                    data.forEach(item => {
+                        const li = document.createElement("li");
+                        li.textContent = item;
+                        listElement.appendChild(li);
+                    });
+                }
+            })
+            .catch(error => {
+                console.error("请求失败:", error);
+                listElement.innerHTML = "<li>请求失败，请刷新重试</li>";
+            });
+        // 调用uncommitted api
+        // 先获取 ul 元素
+        const listOfBitches = document.getElementById("bitches");
+        // 调用 API 并展示数据
+        fetch("http://localhost:8080/api/uncommitted")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("网络错误: " + response.status);
+                }
+                return response.json();
+            })
+            .then(data => {
+                // 清空“加载中...”
+                listOfBitches.innerHTML = '';
+
+                if (data.length === 0) {
+                    const li = document.createElement("li");
+                    li.listOfBitches = "没有同学未交";
+                    listOfBitches.appendChild(li);
+                } else {
+                    data.forEach(item => {
+                        const li = document.createElement("li");
+                        li.textContent = item;
+                        listOfBitches.appendChild(li);
+                    });
+                }
+            })
+            .catch(error => {
+                console.error("请求失败:", error);
+                listOfBitches.innerHTML = "<li>请求失败，请刷新重试</li>";
+            });
+    </script>
+
+</body>
+
+</html>

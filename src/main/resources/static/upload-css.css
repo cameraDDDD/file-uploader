@@ -1,0 +1,103 @@
+/* 整体背景 */
+body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 上传卡片容器 */
+form {
+    background: #fff;
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+}
+
+/* 标题 */
+h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* 文件选择按钮 */
+input[type="file"] {
+    display: block;
+    margin: 0 auto 1rem auto;
+    padding: 10px;
+    border: 2px dashed #aaa;
+    border-radius: 12px;
+    width: 100%;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+    border-color: #4A90E2;
+}
+
+/* 输入框 */
+input[list],
+input[name="name"] {
+    width: 100%;
+    padding: 10px 14px;
+    margin: 1rem 0;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[list]:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.5);
+    outline: none;
+}
+
+/* 提交按钮 */
+button {
+    background: linear-gradient(90deg, #4A90E2, #56CCF2);
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(74, 144, 226, 0.4);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
